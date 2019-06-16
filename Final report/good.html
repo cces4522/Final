@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>good</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  	.navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+    h3{
+      font-size:  60px;
+    }
+    html body{
+      background-color: #e6e6ff;
+      font-family: "微軟正黑體";
+      padding:0;
+      color:brown;
+      font-size:15px;
+    }
+    .container {
+      position:relative;
+      top: 30px;
+    }
+    .container-fluid {
+      position:relative;
+      top: 30px;
+    }
+    .nav-link{
+      color:brown;
+      font-size:20px;
+      font-weight:bold;
+    }
+    img{
+      padding:10px;
+      vertical-align: middle;
+    }
+    .goodsfont{
+      font-size:30px;
+      font-weight:bold;
+      text-align:center;
+    }
+    .proname
+    {
+      font-size:30px;
+      font-weight:bold;
+     
+    }
+    .pro
+    {
+    	font-size:20px;
+    	font-weight:bold;
+    }
+    .stars-bg{
+    position: relative;
+    display: inline-block;
+    height: 19px;
+    width: 157px;
+    background: url(image/star.jpg) 0 0;
+  }
+  .star-active{
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      height: 100%;
+      background: url(image/star.jpg) 0 -24px;
+  }
+  </style>
+</head>
+<body>
+<nav class="nav navbar-default " >
+        <div class="container-fluid " style="top:0px;">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Sweet Ice!</a>
+            </div>
+           <ul class="nav navbar-nav  ">
+                <li><a data-toggle="tab" href="index.html/#home">首頁</a></li>
+                <li><a data-toggle="tab" href="#goods">產品</a></li>
+                <li><a data-toggle="tab" href="#menu2">關於我們</a></li>
+                <li><a data-toggle="tab" href="#menu2">回饋</a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="car">dddd</li>
+            <li id="data">dddd</li>
+            <li id="user">dddd</li>
+            <!-- <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+          </ul>
+        </div>
+</nav> 
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-1"></div>
+    		<div class="col-md-5">
+    			<img src="http://fakeimg.pl/400x400" ></a>
+    		</div>
+    		<div class="col-md-5" >
+    		<br><br>
+    			<p class="proname">冰棒</p>
+    			<input class="pro" type="submit" value="加入我的最愛" class="lovebtn">
+    			<p class="pro">價格 NT.</p>
+    			<p class="pro">庫存</p>
+    			<p class="pro">數量</p>
+    			<input class="pro" type="number" name="num" value="1" min="" max="" class="num" style="" />
+    			<input class="pro" type="submit" value="加入購物車" class="carbtn">
+    			<p class="pro">介紹</p>
+
+ 
+    			
+					
+    		</div>
+    		<div class="col-md-1"></div>
+    	</div>
+    	<div class="row" style="font-size:20px;font-weight:bold; margin-top:30px;margin-bottom:30px;">
+    		<div class="col-md-1"></div>
+    		<div class="col-md-10" style="background-color:#FFF0F5;;border-radius:20px;">
+				<table class="table table-hover table-striped table-responsive">
+						<thead>
+							<tr>
+								<th></th>
+								
+								<th style="width:70%">評論</th>
+								<th>評分(1~5)</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td></td>
+							<td><p class="proinfor"></p>
+                    <input type="text" class="form-control"></td>
+							<td><p class="proinfor"></p>
+                    <input type="text" class="form-control"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>這個商品超棒的，酸酸甜甜很喜歡</td>
+							<td> 
+                <div class="star-eval">
+                    <span class="stars-bg">
+                        <i class="star-active" style="width: 20%"></i>
+                    </span>
+                    <span class="right-txt"><b>4.2</b>分</span>
+                </div>
+              </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>喜歡喜歡，可以買!</td>
+							<td><div class="star-eval">
+                    <span class="stars-bg">
+                        <i class="star-active" style="width: 20%"></i>
+                    </span>
+                    <span class="right-txt"><b>4.2</b>分</span>
+                </div></td>
+						</tr>
+						</tbody>
+					</table>
+    		</div>
+    		<div class="col-md-1"></div>
+    	</style>
+
+    	</div>
+    </div> 
+ 
+  <script type="text/javascript">
+    var login=false;
+    if (login) {
+      　    document.getElementById("car").innerHTML = "<a href='signin.html'><span class='glyphicon glyphicon-shopping-cart'></span> 購物車 </a>";
+            document.getElementById("data").innerHTML = "<a href='signin.html'><span class='glyphicon glyphicon glyphicon-cog'></span> 個人資料 </a>";
+            document.getElementById("user").innerHTML = "<a href='singin.html'><span class='glyphicon glyphicon-user'></span> 登入 / 註冊 </a>";
+
+    }
+    else {
+            document.getElementById("car").innerHTML = "<a href='car.html'><span class='glyphicon glyphicon-shopping-cart'></span> 購物車 </a>";
+            document.getElementById("data").innerHTML = "<a href='personal.html'><span class='glyphicon glyphicon glyphicon-cog'></span> 個人資料/我的最愛 </a>";
+            document.getElementById("user").innerHTML = "<a href='index.html'><span class='glyphicon glyphicon-log-in'></span> 登出 </a>";
+    } 
+</script>
+</body>
+</html>

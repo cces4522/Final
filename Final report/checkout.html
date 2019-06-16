@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>shoppingcar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  	html body{
+      background-color: #e6e6ff;
+      font-family: "微軟正黑體";
+      padding:0;
+      color:brown;
+      font-size:17px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+	<div class="container ">
+		<div class="col-md-6">
+				<h2><mark>結帳</mark></h2>
+				<form action="" method="post" accept-charset="utf-8">
+				<table class="table table-hover table-hover table-responsive">
+					<thead>
+						<tr>
+							<th>商品</th>
+							<th>數量</th>
+							<th>價格</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td><img src="http://fakeimg.pl/150x150" alt=""></td>
+						<td></td>
+						<td><p class="checkprice">NT$</p></td>
+					</tr>
+					</tbody>
+				</table>
+				<p class="chepay">總金額:NT.</p>	
+				<div style="text-align: right;">
+					<a href="car.html" class="btn btn-info" role="button">回購物車</a>
+				</div>
+				</form>
+			</div>
+		<div class="col-md-6">
+		<h2><mark>訂單資料</mark></h2><br><hr>
+		<form class="form-horizontal" action="/action_page.php">
+			<div class="form-group">
+    			<label class="control-label col-md-3" for="name">姓名:</label>
+    			<div class="col-md-8">
+     				<input type="text" class="form-control" id="name" placeholder="中文姓名" name="name">
+     			</div>
+    		</div>
+    		<div class="form-group">
+    			<label class="control-label col-md-3" for="email">Email:</label>
+    			<div class="col-md-8">
+     				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+     			</div>
+    		</div>
+    		<div class="form-group">
+    			<label class="control-label col-md-3" for="pwd">密碼:</label>
+    			<div class="col-md-8">          
+    				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label class="control-label col-md-3" for="pwd">地址:</label>
+    			<div class="col-md-8">          
+    				<input type="text" class="form-control" id="add" placeholder="Enter address" name="add">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label class="control-label col-md-3" for="pwd">手機號碼:</label>
+    			<div class="col-md-8">          
+    				<input type="number" class="form-control" id="pwd" placeholder="0912345678" name="phone">
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<label class="control-label col-md-3" for="pwd">寄送方式:</label>
+    			<div class="col-md-8">          
+    				<input type="text" class="form-control" id="send" placeholder="便利商店貨到付款 / 宅急便 線上付款" name="send">
+    			</div>
+    		</div>
+
+    	<div class="form-group">        
+    		<div class="col-sm-offset-2 col-sm-10">
+    		<button type="submit" class="btn btn-warning pull-right">確定下單</button>
+     		</div>
+    	</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

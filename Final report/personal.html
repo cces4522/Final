@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>personal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  	html body{
+      background-color: #e6e6ff;
+      font-family: "微軟正黑體";
+      padding:0;
+      color:brown;
+      font-size:17px;
+      font-weight: bold;
+    }
+    img{
+      padding:10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="container-fluid" >
+                  <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                    <h2><mark>個人資料</mark></h2>
+                      <ul class="nav  nav-stacked" id="goodtab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#data" role="tab" aria-controls="data">基本資料編輯</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#love" role="tab" aria-controls="love">我的最愛</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#consume" role="tab" aria-controls="consume">消費紀錄</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#comment" role="tab" aria-controls="comment">評論與評分紀錄</a>
+                        </li>
+                        
+                       
+                        
+                      </ul>
+                    </div>
+                    
+                  <div class="col-md-8 tab-content">
+                    <div class="tab-pane active" id="data" role="tabpanel">
+						<p class="goodsfont"><br><br><br>-----基本資料編輯-----</p>
+						<form action="/action_page.php">
+					      <div class="form-group">
+					        <label for="email">帳號:</label>
+					        <input type="email" class="form-control" id="email" placeholder="Enter Email ">
+					        
+					      </div>
+					      <div class="form-group">
+					        <label for="pwd">密碼:</label>
+					        <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+					      </div>
+					      <div class="form-group form-check">
+					       
+					      </div>
+					      <a href="index.html" class="btn btn-info pull-right" role="button">回首頁</a>
+					      <button type="submit" class="btn btn-primary pull-right">確定</button> 
+					     
+					    </form>
+                    </div>
+
+                    <div class="tab-pane" id="love" role="tabpanel"> 
+                      <p class="goodsfont"><br><br><br>-----我的最愛----</p>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+                      <a href="Good.html"><img src="http://fakeimg.pl/300x300" ></a>
+							<div style="text-align: right;">
+								<a href="index.html" class="btn btn-info" role="button">回首頁</a>
+							</div>
+					
+                    </div>
+
+                    <div class="tab-pane" id="consume" role="tabpanel">
+                      <p class="goodsfont"><br><br><br>--------消費紀錄-------	</p>
+	                     <form action="" method="post" accept-charset="utf-8">
+							<table class="table table-hover table-hover table-responsive">
+								<thead>
+									<tr>
+										<th>商品</th>
+										<th>數量</th>
+										<th>價格</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><img src="http://fakeimg.pl/150x150" alt=""></td>
+									<td></td>
+									<td><p class="checkprice">NT$</p></td>
+								</tr>
+								</tbody>
+							</table>	
+							<div style="text-align: right;">
+								<a href="index.html" class="btn btn-info" role="button">回首頁</a>
+							</div>
+						</form>
+                    </div>
+
+                    <div class="tab-pane" id="comment" role="tabpanel"> 
+                      <p class="goodsfont"><br><br><br>-----評論與評分紀錄----</p>
+                      <form action="" method="post" accept-charset="utf-8">
+							<table class="table table-hover table-hover table-responsive">
+								<thead>
+									<tr>
+										<th>商品</th>
+										<th>評論</th>
+										<th>評分</th>
+									</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><img src="http://fakeimg.pl/150x150" alt=""></td>
+									<td></td>
+									<td></td>
+								</tr>
+								</tbody>
+							</table>	
+							<div style="text-align: right;">
+								<a href="index.html" class="btn btn-info" role="button">回首頁</a>
+							</div>
+						</form>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+                  
+            </div>
+	</div>
+</body>
+</html>
